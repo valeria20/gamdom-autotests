@@ -110,17 +110,17 @@ Fixtures simplify test setup and ensure consistent test initialization.
 
 ## Design patterns used and why
 
-### Page Object Model (POM)
+#### Page Object Model (POM)
 
 Used for UI testing to separate test logic from UI interaction logic.
 This makes tests easier to read and reduces duplication.
 
-### Fragment / Component pattern
+#### Fragment / Component pattern
 
 Used for modal dialogs and reusable UI blocks.
 This helps keep Page Objects small and focused.
 
-### Centralized configuration and data
+#### Centralized configuration and data
 
 Selectors, endpoints and constants are stored in dedicated files to avoid duplication and simplify updates.
 
