@@ -1,3 +1,5 @@
+**[Critical Business Functional Areas Document]**(https://drive.google.com/file/d/1gRX0TziHW4EZWbDW4pj2HHcjjV8yDJ8R/view?usp=sharing) | **[Complex Scenario Document]**(https://drive.google.com/file/d/1GsKK3LE7ElpHtb_dp99_RhfhyKiHzY63/view?usp=sharing)
+
 # 🎭 Playwright UI & API Test Suites
 
 This repository contains an automated testing framework built with Playwright and TypeScript.  
@@ -46,23 +48,26 @@ npm run api-tests
 
 ## 🗂️ Framework structure choices
 The framework is structured to clearly separate responsibilities and make the code easy to read, maintain and scale.
-Contains all automated tests, separated by type:
-``` tests/ ```
+Contains all automated tests, separated by type.
+
+#### ``` tests/ ```
+
 Contains all automated tests, separated by type:
 + ``` tests/ui ``` - UI tests for the Gamdom 
 + ``` tests/api ``` - API tests for Jira Issues API
 This separation allows running UI and API tests independently and scaling them separately.
 
-```pages/```
+#### ```pages/```
+
 Implements the **Page Object Model (POM)** for UI testing:
 
 + ```BasePage.ts``` contains shared logic (navigation, common helpers)
-
 + ```HomePage.ts``` and ```GamdomOriginalsPage.ts``` represent main application pages
 
 This approach keeps test logic clean and prevents duplication of UI interaction code.
 
-```fragments/```
+#### ```fragments/```
+
 Contains UI fragments for reusable parts of the interface, such as modal dialogs:
 
 + Sign In modal
@@ -71,11 +76,13 @@ Contains UI fragments for reusable parts of the interface, such as modal dialogs
 
 Fragments help to avoid very large Page Objects and improve maintainability when UI components are reused across pages.
 
-```selectors/```
+#### ```selectors/```
+
 Central place for UI selectors.
 This allows updating selectors in one place if the UI changes, without modifying tests or page logic.
 
-```data/```
+#### ```data/```
+
 Contains static data and constants:
 
 + API endpoints
@@ -84,14 +91,15 @@ Contains static data and constants:
 
 This avoids hardcoded strings in tests and improves readability and consistency.
 
-```services/```
+#### ```services/```
+
 Contains API client logic:
 
 + ```JiraIssueApiClient.ts``` is a simple API client that sends requests to Jira
 
 The client is intentionally kept “thin” and does not include assertions. All validations are done in tests.
 
-```fixtures/```
+#### ```fixtures/```
 
 Custom Playwright fixtures:
 
