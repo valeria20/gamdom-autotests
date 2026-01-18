@@ -48,7 +48,6 @@ npm run api-tests
 
 ## Framework structure choices
 The framework is structured to clearly separate responsibilities and make the code easy to read, maintain and scale.
-Contains all automated tests, separated by type.
 
 #### ``` tests/ ```
 
