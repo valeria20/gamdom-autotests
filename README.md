@@ -1,4 +1,4 @@
-**[Critical Business Functional Areas Document]**(https://drive.google.com/file/d/1gRX0TziHW4EZWbDW4pj2HHcjjV8yDJ8R/view?usp=sharing) | **[Complex Scenario Document]**(https://drive.google.com/file/d/1GsKK3LE7ElpHtb_dp99_RhfhyKiHzY63/view?usp=sharing)
+[Critical Business Functional Areas Document](https://drive.google.com/file/d/1gRX0TziHW4EZWbDW4pj2HHcjjV8yDJ8R/view?usp=sharing) | [Complex Scenario Document](https://drive.google.com/file/d/1GsKK3LE7ElpHtb_dp99_RhfhyKiHzY63/view?usp=sharing)
 
 # 🎭 Playwright UI & API Test Suites
 
