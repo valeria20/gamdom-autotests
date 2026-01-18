@@ -23,7 +23,7 @@ Example:
 ```
 GAMDOM_BASE_URL=https://megaurl.com
 JIRA_API_BASE_URL=https://gigaurl.com
-JIRA_API_AUTH_TOKEN=kjwenkwefkwejnf....
+JIRA_API_AUTH_TOKEN=kjwenkwefkwejnf...
 ```
 
 ## 🚀 Running Tests
